@@ -192,6 +192,23 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 
+	<script type="module">
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+
+		const firebaseConfig = {
+			apiKey: "AIzaSyBsdZD--81_5hEQp_pYKpLcXONbYzgxmvI",
+			authDomain: "ventas-acfb0.firebaseapp.com",
+			projectId: "ventas-acfb0",
+			storageBucket: "ventas-acfb0.appspot.com",
+			messagingSenderId: "866892883767",
+			appId: "1:866892883767:web:f99182cb089783d2badcb2",
+			measurementId: "G-NK386Q0CV3"
+		};
+
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	</script>
 </body>
 
 </html>
